@@ -1,0 +1,49 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.tasiyici {
+    width: 400px;
+    min-height: 300px;
+    border: 1px solid silver;
+    border-radius: 7px;
+    margin: 200px auto;
+    color:dimgray;
+}
+
+.baslik {
+    background-color: #dedede;
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+}
+.icerik{
+    padding:20px;
+}
+.satir{
+    padding-bottom:25px;
+}
+.metinkutu
+{
+    width:336px;
+    padding:7px;
+    margin-top:5px;
+    border-radius:3px;
+    border:1px solid silver;
+}
+.hatakutu
+{
+    border:1px solid darkred;
+    background-color:#ffd2d2;
+    color:darkred;
+    padding:15px;
+    border-radius:7px;
+    margin-bottom:10px;
+}
