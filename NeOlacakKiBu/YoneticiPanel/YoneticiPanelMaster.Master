@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="YoneticiPanelMaster.master.cs" Inherits="NeOlacakKiBu.YoneticiPanel.YoneticiPanelMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/AdminLayout.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="ustMenu Deep-Teal-Sea-2-bg">
+            <div class="Baslik Deep-Teal-Sea-1-bg">
+                <h3>Ne Olacak Ki Bu Yönetim</h3>
+            </div>
+            <div class="Kullanici">
+                <asp:Label ID="lbl_kullanici" runat="server"></asp:Label> | 
+                <asp:LinkButton ID="lbtn_cikis" runat="server" OnClick="lbtn_cikis_Click">Çıkış Yap</asp:LinkButton>
+            </div>
+        </div>
+        <div style="clear:both"></div>
+        <div class="menu">
+            <ul>
+                <a href="Default.aspx">
+                    <li>Anasayfa</li>
+                </a>
+               
+                <a href="#">
+                    <li>Kategori Listele</li>
+                </a>
+                <a href="KategoriEkle.aspx">
+                    <li>Kategori Ekle</li>
+                </a>
+                
+                <a href="#">
+                    <li>Makale Listele</li>
+                </a>
+                <a href="#">
+                    <li>Makale Ekle</li>
+                </a>
+            </ul>
+        </div>
+        <div class="icerik">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

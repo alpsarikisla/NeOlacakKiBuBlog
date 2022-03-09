@@ -1,0 +1,98 @@
+﻿*,h1,h2,h3,h4,h5,h6
+{
+    margin:0;padding:0;
+}
+body {
+    font-family:Calibri;
+}
+.ustMenu
+{
+    min-height:63px;
+}
+.Baslik {
+    color: white;
+    padding:20px 10px;
+    width:220px;
+    float:left;
+}
+.Kullanici
+{
+    color:white;
+    float:right;
+    padding:20px;
+}
+.Kullanici a {
+    color: white;
+    text-decoration:none;
+}
+    .Kullanici a:hover {
+        text-decoration: underline;
+    }
+/* Color Theme Swatches in Hex */
+.Deep-Teal-Sea-1 {
+    color: #012E40;
+}
+
+.Deep-Teal-Sea-2 {
+    color: #024959;
+}
+
+.Deep-Teal-Sea-3 {
+    color: #026773;
+}
+
+.Deep-Teal-Sea-4 {
+    color: #3CA6A6;
+}
+
+.Deep-Teal-Sea-5 {
+    color: #F2E3D5;
+}
+.Deep-Teal-Sea-1-bg {
+    background-color: #012E40;
+}
+
+.Deep-Teal-Sea-2-bg {
+    background-color: #024959;
+}
+
+.Deep-Teal-Sea-3-bg {
+    background-color: #026773;
+}
+
+.Deep-Teal-Sea-4-bg {
+    background-color: #3CA6A6;
+}
+
+.Deep-Teal-Sea-5-bg {
+    background-color: #F2E3D5;
+}
+.menu {
+    width: 240px;
+    padding: 20px 0px;
+    min-height: 1000px;
+    float: left;
+    background-color: #dedede;
+}
+.menu ul
+{
+    list-style-type:none;
+}
+    .menu ul a {
+        text-decoration: none;
+        color: #024959;
+    }
+   
+    .menu ul a li {
+        border-bottom: 1px solid silver;
+        padding: 5px;
+        padding-left: 20px;
+    }
+        .menu ul a li:hover {
+            background-color: #F2E3D5;
+        }
+        .icerik {
+            float: left;
+            padding: 20px;
+        }
+

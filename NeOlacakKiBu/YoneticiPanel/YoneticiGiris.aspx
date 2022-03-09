@@ -23,7 +23,7 @@
                 </div>
                 <div class="satir">
                     <label>Şifre</label><br />
-                    <asp:TextBox ID="tb_sifre" runat="server" CssClass="metinkutu"></asp:TextBox>
+                    <asp:TextBox ID="tb_sifre" runat="server" CssClass="metinkutu" TextMode="Password"></asp:TextBox>
                 </div>
                 <div class="satir">
                     <asp:Button ID="btn_giris" runat="server" Text="Giriş Yap" OnClick="btn_giris_Click" />
