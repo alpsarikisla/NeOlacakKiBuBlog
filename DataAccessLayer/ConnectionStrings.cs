@@ -8,6 +8,6 @@ namespace DataAccessLayer
 {
     public class ConnectionStrings
     {
-        public static string ConStr = @"Data Source=DESKTOP-6VC48K2; Initial Catalog=NeOlacakKiBu_Db;Integrated Security=True";
+        public static string ConStr = @"Data Source=DESKTOP-6NIP90O\SQLEXPRESS; Initial Catalog=NeOlacakKiBu_Db;Integrated Security=True";
     }
 }

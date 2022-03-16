@@ -1,0 +1,92 @@
+.formtasiyici
+{
+    display:inline-block;
+    border:1px solid silver;
+    border-radius:7px;
+    width:100%;
+}
+.baslik {
+    background-color:#dedede;
+    padding: 15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    color: #012E40;
+}
+
+.icerik {
+    padding: 20px;
+}
+
+.satir {
+    padding-bottom: 25px;
+}
+
+.metinkutu {
+    width: 336px;
+    padding: 7px;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid silver;
+}
+.buton
+{
+    padding:10px 30px;
+    border-radius:7px;
+    color:white;
+    text-decoration:none;
+    font-weight:900;
+}
+.buton:hover
+{
+    background-color:#012E40;
+}
+.pnlbasarisiz {
+    border: 1px solid darkred;
+    background-color: #ffd2d2;
+    color: darkred;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.pnlbasarili {
+    border: 1px solid #146b03;
+    background-color: #bdf7b1;
+    color: #146b03;
+    padding: 15px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.tablo
+{
+    width:100%;
+}
+    .tablo thead tr th {
+        border: 1px solid #dedede;
+        padding:10px;
+        background-color:#f5f5f5;
+    }
+    .tablo tbody tr td {
+        border: 1px solid #dedede;
+        padding: 17px;
+    }
+    .tablo tbody .alt td {
+        border: 1px solid #dedede;
+        padding: 17px;
+        background-color: #f6f6f6;
+    }
+.listebuton {
+    padding:5px;
+    border-radius:5px;
+    text-decoration:none;
+}
+.sil{
+    background-color:#e13f3f;
+    color:white;
+}
+.duzenle {
+    color: white;
+}
+.durum {
+    color: white;
+    background-color: #fe9944;
+}

@@ -26,6 +26,8 @@ CREATE TABLE Yoneticiler
 	REFERENCES YoneticiTurleri(ID)
 )
 GO
+INSERT INTO Yoneticiler(YoneticiTurID, Isim, Soyisim, Mail, Sifre, Durum) VALUES(1, 'Alp', 'Sarýkýþla', 'alpsarikisla@hotmail.com', '12345',1)
+GO
 CREATE TABLE Uyeler
 (
 	ID int IDENTITY(1,1),

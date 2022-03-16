@@ -4,3 +4,9 @@ C:\Users\302-PC\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\Data
 C:\Users\302-PC\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\302-PC\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\302-PC\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\303\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\303\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\303\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\303\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\303\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\303\Documents\GitHub\NeOlacakKiBuBlog\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

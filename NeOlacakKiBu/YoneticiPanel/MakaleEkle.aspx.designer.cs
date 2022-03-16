@@ -11,7 +11,7 @@ namespace NeOlacakKiBu.YoneticiPanel
 {
 
 
-    public partial class KategoriEkle
+    public partial class MakaleEkle
     {
 
         /// <summary>
@@ -49,6 +49,15 @@ namespace NeOlacakKiBu.YoneticiPanel
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tb_isim;
+
+        /// <summary>
+        /// ddl_kategoriler control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddl_kategoriler;
 
         /// <summary>
         /// cb_durum control.

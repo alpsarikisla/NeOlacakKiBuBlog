@@ -17,6 +17,8 @@ namespace DataAccessLayer
             cmd = con.CreateCommand();
         }
 
+        #region Yonetici Metotları
+
         public Yonetici YoneticiGiris(string mail, string sifre)
         {
             Yonetici y = null;
@@ -55,5 +57,147 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+
+        #endregion
+
+        #region Kategori Metotları
+
+        public bool KategoriEkle(Kategori kat)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Kategoriler(Isim, Durum) VALUES(@isim, @durum)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@isim", kat.Isim);
+                cmd.Parameters.AddWithValue("@durum", kat.Durum);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Kategori> KategoriListele()
+        {
+            try
+            {
+                List<Kategori> kategoriler = new List<Kategori>();
+                cmd.CommandText = "SELECT ID, Isim, Durum FROM Kategoriler";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Kategori kategori = new Kategori();
+                    kategori.ID = reader.GetInt32(0);
+                    kategori.Isim = reader.GetString(1);
+                    kategori.Durum = reader.GetBoolean(2);
+                    kategoriler.Add(kategori);
+                }
+                return kategoriler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void KategoriSil(int id)
+        {
+            try
+            {
+                cmd.CommandText = "DELETE FROM Kategoriler WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                cmd.ExecuteNonQuery();
+            }
+            finally { con.Close(); }
+        }
+
+        public Kategori KategoriGetir(int id)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT ID, Isim, Durum FROM Kategoriler WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                Kategori k = new Kategori();
+                while (reader.Read())
+                {
+                    k.ID = reader.GetInt32(0);
+                    k.Isim = reader.GetString(1);
+                    k.Durum = reader.GetBoolean(2);
+                }
+                return k;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool KategoriDuzenle(Kategori kat)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Kategoriler SET Isim=@isim, Durum=@durum WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@isim", kat.Isim);
+                cmd.Parameters.AddWithValue("@durum", kat.Durum);
+                cmd.Parameters.AddWithValue("@id", kat.ID);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public void KategoriDurumDegistir(int id)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT Durum FROM Kategoriler WHERE ID=@id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+                bool durum = Convert.ToBoolean(cmd.ExecuteScalar());
+                cmd.CommandText = "UPDATE Kategoriler SET Durum = @durum WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@durum", !durum);
+                cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
+
     }
 }

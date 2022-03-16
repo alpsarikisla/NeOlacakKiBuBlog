@@ -27,8 +27,11 @@
                     <li>Anasayfa</li>
                 </a>
                
-                <a href="#">
-                    <li>Kategori Listele</li>
+                <a href="KategoriListeleGrid.aspx">
+                    <li>Kategori Listele (Grid)</li>
+                </a>
+                 <a href="KategoriListeleList.aspx">
+                    <li>Kategori Listele (List)</li>
                 </a>
                 <a href="KategoriEkle.aspx">
                     <li>Kategori Ekle</li>
@@ -37,7 +40,7 @@
                 <a href="#">
                     <li>Makale Listele</li>
                 </a>
-                <a href="#">
+                <a href="MakaleEkle.aspx">
                     <li>Makale Ekle</li>
                 </a>
             </ul>

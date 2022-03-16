@@ -69,9 +69,14 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="YoneticiPanel\css\AdminLayout.css" />
+    <Content Include="YoneticiPanel\css\formdesign.css" />
     <Content Include="YoneticiPanel\css\Giris.css" />
     <Content Include="YoneticiPanel\Default.aspx" />
+    <Content Include="YoneticiPanel\KategoriDuzenle.aspx" />
     <Content Include="YoneticiPanel\KategoriEkle.aspx" />
+    <Content Include="YoneticiPanel\KategoriListeleGrid.aspx" />
+    <Content Include="YoneticiPanel\KategoriListeleList.aspx" />
+    <Content Include="YoneticiPanel\MakaleEkle.aspx" />
     <Content Include="YoneticiPanel\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -83,12 +88,40 @@
     <Compile Include="YoneticiPanel\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="YoneticiPanel\KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YoneticiPanel\KategoriEkle.aspx.cs">
       <DependentUpon>KategoriEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="YoneticiPanel\KategoriEkle.aspx.designer.cs">
       <DependentUpon>KategoriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPanel\KategoriListeleGrid.aspx.cs">
+      <DependentUpon>KategoriListeleGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\KategoriListeleGrid.aspx.designer.cs">
+      <DependentUpon>KategoriListeleGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPanel\KategoriListeleList.aspx.cs">
+      <DependentUpon>KategoriListeleList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\KategoriListeleList.aspx.designer.cs">
+      <DependentUpon>KategoriListeleList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPanel\MakaleEkle.aspx.cs">
+      <DependentUpon>MakaleEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPanel\MakaleEkle.aspx.designer.cs">
+      <DependentUpon>MakaleEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="YoneticiPanel\YoneticiGiris.aspx.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>
