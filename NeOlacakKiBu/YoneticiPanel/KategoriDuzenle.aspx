@@ -8,7 +8,7 @@
         <div class="baslik">
             Kategori Güncelle
         </div>
-        <div class="icerik">
+        <div class="formicerik">
             <asp:Panel ID="pnl_basarisiz" runat="server" CssClass="pnlbasarisiz" Visible="false">
                 <asp:Label ID="lbl_mesaj" runat="server"></asp:Label>
             </asp:Panel>

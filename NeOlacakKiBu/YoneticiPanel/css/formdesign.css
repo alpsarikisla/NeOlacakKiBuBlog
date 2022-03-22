@@ -16,13 +16,15 @@
 .icerik {
     padding: 20px;
 }
-
+.formicerik {
+    padding: 20px;
+}
 .satir {
     padding-bottom: 25px;
 }
 
 .metinkutu {
-    width: 336px;
+    width: 90%;
     padding: 7px;
     margin-top: 5px;
     border-radius: 3px;
@@ -89,4 +91,10 @@
 .durum {
     color: white;
     background-color: #fe9944;
+}
+.yarim
+{
+    width:49%;
+    min-height:500px;
+    float:left;
 }

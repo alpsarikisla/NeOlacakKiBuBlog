@@ -60,6 +60,15 @@ namespace NeOlacakKiBu.YoneticiPanel
         protected global::System.Web.UI.WebControls.DropDownList ddl_kategoriler;
 
         /// <summary>
+        /// fu_resim control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_resim;
+
+        /// <summary>
         /// cb_durum control.
         /// </summary>
         /// <remarks>
@@ -76,5 +85,23 @@ namespace NeOlacakKiBu.YoneticiPanel
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtn_ekle;
+
+        /// <summary>
+        /// tb_ozet control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_ozet;
+
+        /// <summary>
+        /// tb_icerik control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_icerik;
     }
 }

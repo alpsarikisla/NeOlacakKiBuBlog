@@ -50,5 +50,9 @@
             </asp:ContentPlaceHolder>
         </div>
     </form>
+     <script src="ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'ContentPlaceHolder1_tb_icerik' );
+    </script>
 </body>
 </html>

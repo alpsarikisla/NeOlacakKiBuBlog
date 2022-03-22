@@ -113,6 +113,42 @@ namespace DataAccessLayer
             }
         }
 
+        public List<Kategori> KategoriListele(bool durum)
+        {
+            try
+            {
+                List<Kategori> kategoriler = new List<Kategori>();
+                if (durum)
+                {
+                    cmd.CommandText = "SELECT ID, Isim, Durum FROM Kategoriler WHERE Durum = 1";
+                }
+                else
+                {
+                    cmd.CommandText = "SELECT ID, Isim, Durum FROM Kategoriler WHERE Durum = 0";
+                }
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Kategori kategori = new Kategori();
+                    kategori.ID = reader.GetInt32(0);
+                    kategori.Isim = reader.GetString(1);
+                    kategori.Durum = reader.GetBoolean(2);
+                    kategoriler.Add(kategori);
+                }
+                return kategoriler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         public void KategoriSil(int id)
         {
             try
@@ -197,6 +233,39 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+        #endregion
+
+        #region Makale Metotları
+
+        public bool MakaleEkle(Makale mak)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO Makaleler(KategoriID, YazarID, Baslik, Ozet, Icerik, GoruntulemeSayi, KapakResim, EklemeTarih, Durum) VALUES(@kategoriID, @yazarID, @baslik, @ozet, @icerik, @goruntulemeSayi, @kapakResim, @eklemeTarih, @durum)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@kategoriID", mak.Kategori_ID);
+                cmd.Parameters.AddWithValue("@yazarID", mak.Yazar_ID);
+                cmd.Parameters.AddWithValue("@baslik", mak.Baslik);
+                cmd.Parameters.AddWithValue("@ozet", mak.Ozet);
+                cmd.Parameters.AddWithValue("@icerik", mak.Icerik);
+                cmd.Parameters.AddWithValue("@goruntulemeSayi", mak.GoruntulemeSayi);
+                cmd.Parameters.AddWithValue("@kapakResim", mak.KapakResim);
+                cmd.Parameters.AddWithValue("@eklemeTarih", mak.EklemeTarih);
+                cmd.Parameters.AddWithValue("@durum", mak.Durum);
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         #endregion
 
     }
