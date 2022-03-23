@@ -1,0 +1,53 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="NeOlacakKiBu.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Ne Olacak Ki Bu? - Teknoloji Bloğu</title>
+    <link href="Assets/Css/BlogStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="anatasiyici">
+            <div class="bannertasiyici">
+                <a href="Default.aspx">
+                    <img src="Assets/Resimler/logo.png" class="logo" /></a>
+                <div class="kullanicipanel">
+                    <a href="UyeOl.aspx">Üye Ol</a>
+                    <a href="UyeOl.aspx">Giriş Yap</a>
+                </div>
+                <div style="clear: both"></div>
+                <div class="banneryazi">
+                    Bilişim Eğitim Merkezi Eskişehir "Sünger Developers" Yeni nesil Teknoloji Bloğu...
+                </div>
+            </div>
+            <div class="tasiyici">
+                <div class="iceriktasiyici">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="menutasiyici">
+                    <ul class="menu">
+                        <asp:Repeater ID="rp_kategoriler" runat="server">
+                            <ItemTemplate>
+                                <a href="#">
+                                    <li><%#  Eval("Isim") %></li>
+                                </a>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </ul>
+                    <div class="reklam">
+                        <a href="https://www.turhost.com/r/104820/">
+                            <img src="Assets/banners/160x600.gif" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

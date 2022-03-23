@@ -67,7 +67,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\banners\120x600.gif" />
+    <Content Include="Assets\banners\160x600.gif" />
+    <Content Include="Assets\banners\250x250.gif" />
+    <Content Include="Assets\banners\300x250.gif" />
+    <Content Include="Assets\banners\336x280.gif" />
+    <Content Include="Assets\banners\468x60.gif" />
+    <Content Include="Assets\banners\728x90.gif" />
+    <Content Include="Assets\Css\BlogStyle.css" />
     <Content Include="Assets\MakaleResim\none.png" />
+    <Content Include="Assets\Resimler\logo.png" />
+    <Content Include="Default.aspx" />
     <Content Include="Web.config" />
     <Content Include="YoneticiPanel\ckeditor\adapters\jquery.js" />
     <Content Include="YoneticiPanel\ckeditor\build-config.js" />
@@ -392,6 +402,20 @@
     <Content Include="YoneticiPanel\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YoneticiPanel\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -451,6 +475,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -482,6 +507,7 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

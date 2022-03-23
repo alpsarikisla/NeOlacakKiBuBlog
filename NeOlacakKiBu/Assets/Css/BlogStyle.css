@@ -1,0 +1,116 @@
+﻿*,h1,h2,h3,h4,h5,h6
+{
+    margin:0px; padding:0px;
+}
+body {
+    font-family:Calibri;
+}
+.anatasiyici
+{
+    /*margin-left:auto;margin-right:auto;*/
+    margin:0 auto;
+    width:1200px;
+    min-height:768px;
+}
+.bannertasiyici
+{
+    margin-top:20px;   
+}
+.banneryazi {
+    border-bottom: 1px solid #FFA600;
+    border-top: 1px solid #FFA600;
+    color:gray;
+    padding:10px 0;
+    margin-top:20px;
+}
+.logo {
+    float:left;
+    width:128px;
+}
+.kullanicipanel
+{
+    width:250px;
+    float:right;
+    padding-top:20px;
+}
+.kullanicipanel a
+{
+    text-decoration:none;
+    color:#FFA600;
+    float:right;
+    padding:0px 10px;
+}
+.tasiyici
+{
+
+}
+.iceriktasiyici
+{
+    width:1000px;
+    float:left;
+}
+.menutasiyici{
+    width:190px;
+    padding-left:9px;
+    border-left:1px solid silver;
+    min-height:700px;
+    float:left;
+}
+.menu
+{
+    list-style-type:none;
+}
+.menu a li
+{
+    padding:10px;
+    border-bottom:1px solid #eaeaea;
+}
+    .menu a {
+        text-decoration:none;
+        color:#FFA600;
+    }
+    .reklam{
+        padding:10px;
+    }
+.makale {
+    -webkit-box-shadow: 5px 5px 11px 1px rgba(0,0,0,0.16);
+    box-shadow: 5px 5px 11px 1px rgba(0,0,0,0.16);
+    border-radius: 10px;
+    padding: 10px;
+    width: 458px;
+    float: left;
+    margin: 10px;
+}
+.makale img
+{
+    width:100%;
+}
+        .makale .baslik
+        {
+            color:gray;
+            padding-bottom:10px;
+            border-bottom:1px solid silver;
+        }
+.makale .ekbilgi
+{
+    background-color:#f1f1f1;
+    font-size:9pt;
+    color:#FFA600;
+    padding:10px 5px;
+}
+    .makale .ozet {
+        padding: 10px 0px;
+        min-height:80px;
+    }
+.devamibuton
+{
+    color:white;
+    float:right;
+    background-color:#FFA600;
+    border-radius:3px;
+    padding:10px 25px;
+    text-decoration:none;
+}
+    .devamibuton:hover {
+        background-color: #fbbb43;
+    }

@@ -266,6 +266,44 @@ namespace DataAccessLayer
             }
         }
 
+        public List<Makale> MakaleListele()
+        {
+            List<Makale> Makaleler = new List<Makale>();
+            try
+            {
+                cmd.CommandText = "SELECT M.ID, M.KategoriID, K.Isim, M.YazarID, Y.Isim + ' ' + Y.Soyisim, M.Baslik, M.Ozet, M.Icerik, M.GoruntulemeSayi, M.KapakResim, M.EklemeTarih, M.Durum FROM Makaleler AS M JOIN Kategoriler AS K ON M.KategoriID= K.ID JOIN Yoneticiler AS Y ON M.YazarID=Y.ID";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Makale m = new Makale();
+                    m.ID = reader.GetInt32(0);
+                    m.Kategori_ID = reader.GetInt32(1);
+                    m.Kategori = reader.GetString(2);
+                    m.Yazar_ID = reader.GetInt32(3);
+                    m.Yazar = reader.GetString(4);
+                    m.Baslik = reader.GetString(5);
+                    m.Ozet = reader.GetString(6);
+                    m.Icerik = reader.GetString(7);
+                    m.GoruntulemeSayi = reader.GetInt32(8);
+                    m.KapakResim = reader.GetString(9);
+                    m.EklemeTarih = reader.GetDateTime(10);
+                    m.Durum = reader.GetBoolean(11);
+                    Makaleler.Add(m);
+                }
+                return Makaleler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         #endregion
 
     }

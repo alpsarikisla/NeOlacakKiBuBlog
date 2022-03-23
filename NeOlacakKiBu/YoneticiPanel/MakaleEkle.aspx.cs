@@ -41,7 +41,6 @@ namespace NeOlacakKiBu.YoneticiPanel
                     string isim = Guid.NewGuid().ToString() + uzanti;
                     fu_resim.SaveAs(Server.MapPath("~/Assets/MakaleResim/" + isim));
                     mak.KapakResim = isim;
-
                 }
                 else
                 {
