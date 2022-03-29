@@ -11,88 +11,70 @@ namespace NeOlacakKiBu
 {
 
 
-    public partial class MasterPage
+    public partial class MakaleDetay
     {
 
         /// <summary>
-        /// head control.
+        /// ltrl_baslik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.Literal ltrl_baslik;
 
         /// <summary>
-        /// form1 control.
+        /// img_resim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Image img_resim;
 
         /// <summary>
-        /// pnl_girisYok control.
+        /// ltrl_ozet control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnl_girisYok;
+        protected global::System.Web.UI.WebControls.Literal ltrl_ozet;
 
         /// <summary>
-        /// pnl_girisVar control.
+        /// ltrl_kategori control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnl_girisVar;
+        protected global::System.Web.UI.WebControls.Literal ltrl_kategori;
 
         /// <summary>
-        /// img_kullanici control.
+        /// ltrl_yazar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image img_kullanici;
+        protected global::System.Web.UI.WebControls.Literal ltrl_yazar;
 
         /// <summary>
-        /// ltrl_kullanici control.
+        /// ltrl_goruntulemeSayi control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrl_kullanici;
+        protected global::System.Web.UI.WebControls.Literal ltrl_goruntulemeSayi;
 
         /// <summary>
-        /// lbtn_cikis control.
+        /// ltrl_icerik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtn_cikis;
-
-        /// <summary>
-        /// ContentPlaceHolder1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-
-        /// <summary>
-        /// rp_kategoriler control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rp_kategoriler;
+        protected global::System.Web.UI.WebControls.Literal ltrl_icerik;
     }
 }

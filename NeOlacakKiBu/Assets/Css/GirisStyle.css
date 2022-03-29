@@ -1,18 +1,9 @@
-﻿*, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Calibri;
-}
-
-.tasiyici {
-    width: 400px;
+﻿.girisPanel {
+    width: 800px;
     min-height: 300px;
-    border: 1px solid silver;
+    
     border-radius: 7px;
-    margin: 200px auto;
+    margin: 20px auto;
     color: dimgray;
 }
 
@@ -23,10 +14,23 @@ body {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
 }
-
-.icerik {
-    padding: 20px;
+.form
+{
+    width:500px;
+    float:left;
 }
+.PanelResim {
+    width: 250px;
+    float: left;
+    padding:10px;
+}
+    .PanelResim img
+    {
+        width:100%;
+    }
+    .icerik {
+        padding: 20px;
+    }
 
 .satir {
     padding-bottom: 25px;
@@ -47,4 +51,14 @@ body {
     padding: 15px;
     border-radius: 7px;
     margin-bottom: 10px;
+}
+.girisbutton {
+    text-align: center;
+    display: block;
+    background-color: #ffb210;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    text-decoration:none;
+    font-size:13pt;
 }

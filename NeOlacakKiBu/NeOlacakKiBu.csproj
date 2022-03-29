@@ -75,9 +75,15 @@
     <Content Include="Assets\banners\468x60.gif" />
     <Content Include="Assets\banners\728x90.gif" />
     <Content Include="Assets\Css\BlogStyle.css" />
+    <Content Include="Assets\Css\GirisStyle.css" />
+    <Content Include="Assets\Resimler\login1.png" />
     <Content Include="Assets\MakaleResim\none.png" />
     <Content Include="Assets\Resimler\logo.png" />
+    <Content Include="Assets\UyeResim\none.png" />
+    <Content Include="Assets\UyeResim\abdullah.jpg" />
     <Content Include="Default.aspx" />
+    <Content Include="MakaleDetay.aspx" />
+    <Content Include="UyeGiris.aspx" />
     <Content Include="Web.config" />
     <Content Include="YoneticiPanel\ckeditor\adapters\jquery.js" />
     <Content Include="YoneticiPanel\ckeditor\build-config.js" />
@@ -409,6 +415,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MakaleDetay.aspx.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MakaleDetay.aspx.designer.cs">
+      <DependentUpon>MakaleDetay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -417,6 +430,13 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UyeGiris.aspx.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UyeGiris.aspx.designer.cs">
+      <DependentUpon>UyeGiris.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YoneticiPanel\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -26,9 +26,8 @@
                 <div class="ozet">
                      <%# Eval("Ozet") %>
                 </div>
-               
-                <div >
-                    <a href="#" class="devamibuton">Yazının Devamı</a>
+                <div>
+                    <a href='MakaleDetay.aspx?mid=<%# Eval("ID") %>' class="devamibuton">Yazının Devamı</a>
                 </div>
             </div>
         </ItemTemplate>

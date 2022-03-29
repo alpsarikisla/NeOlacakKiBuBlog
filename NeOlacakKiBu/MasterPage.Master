@@ -15,10 +15,18 @@
             <div class="bannertasiyici">
                 <a href="Default.aspx">
                     <img src="Assets/Resimler/logo.png" class="logo" /></a>
-                <div class="kullanicipanel">
+                <asp:Panel ID="pnl_girisYok" runat="server" class="kullanicipanel" Visible="true">
                     <a href="UyeOl.aspx">Üye Ol</a>
-                    <a href="UyeOl.aspx">Giriş Yap</a>
-                </div>
+                    <a href="UyeGiris.aspx">Giriş Yap</a>
+                </asp:Panel>
+                <asp:Panel ID="pnl_girisVar" runat="server" class="kullanicipanel" Visible="false">
+                    <asp:Image ID="img_kullanici" runat="server"/>
+                    <a href="profil.aspx">
+                        <asp:Literal ID="ltrl_kullanici" runat="server"></asp:Literal>
+
+                    </a>
+                    <asp:LinkButton ID="lbtn_cikis" runat="server">Çıkış Yap</asp:LinkButton>
+                </asp:Panel>
                 <div style="clear: both"></div>
                 <div class="banneryazi">
                     Bilişim Eğitim Merkezi Eskişehir "Sünger Developers" Yeni nesil Teknoloji Bloğu...
@@ -26,6 +34,7 @@
             </div>
             <div class="tasiyici">
                 <div class="iceriktasiyici">
+                    <div style="width: 1000px;">&nbsp;</div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>
                 </div>
@@ -33,7 +42,7 @@
                     <ul class="menu">
                         <asp:Repeater ID="rp_kategoriler" runat="server">
                             <ItemTemplate>
-                                <a href="#">
+                                <a href='Default.aspx?kid=<%#  Eval("ID") %>'>
                                     <li><%#  Eval("Isim") %></li>
                                 </a>
                             </ItemTemplate>

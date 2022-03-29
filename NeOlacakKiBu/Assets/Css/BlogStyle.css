@@ -38,12 +38,17 @@ body {
     text-decoration:none;
     color:#FFA600;
     float:right;
-    padding:0px 10px;
+    padding:8px 10px;
 }
-.tasiyici
-{
-
-}
+    .kullanicipanel img {
+        float: right;
+        width: 40px;
+        border-radius:22px;
+        border:1px solid silver;
+        padding:2px;
+    }
+    .tasiyici {
+    }
 .iceriktasiyici
 {
     width:1000px;
@@ -114,3 +119,35 @@ body {
     .devamibuton:hover {
         background-color: #fbbb43;
     }
+.detayTasiyici
+{
+    padding-right:20px;
+}
+.makaleBaslik {
+    color: gray;
+    padding: 10px 0;
+    border-bottom: 1px solid silver;
+
+}
+.makaleResim
+{
+    width:580px;
+    float:left;
+    padding:10px 0;
+}
+    .makaleResim img
+    {
+        width:100%
+    }
+.makaleOzet {
+    padding: 10px 0;
+    width: 360px;
+    float: left;
+    padding:20px;
+}
+.detayTasiyici .ekbilgi {
+    background-color: #f1f1f1;
+    font-size: 9pt;
+    color: #FFA600;
+    padding: 10px 5px;
+}
